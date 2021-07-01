@@ -184,3 +184,16 @@ li {
     border-radius: 25px;
     font-size: 16px;
 }
+
+.description {
+    display: flex;
+    height: 60vh;
+}
+
+.sticky-left-descrip {
+    width: 30%;
+}
+
+.sticky-left-descrip ul {
+    display: block;
+}
