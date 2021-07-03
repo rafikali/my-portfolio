@@ -35,7 +35,7 @@ function Type() {
 
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
-			_INTERVAL_VAL = setInterval(Delete, 25);
+			_INTERVAL_VAL = setInterval(Delete, 50);
 		}, 1000);
 	}
 }
@@ -70,12 +70,3 @@ function Delete() {
 // Start the typing effect on load
 _INTERVAL_VAL = setInterval(Type, 100);
 
-let mySentence = "the quick fox , the ?";
-let words = mySentence.split(" ");
-
-for (let i = 0; i < words.length; i++) {
-    words[i] = words[i][0].toUpperCase() + words[i].substr(1);
-}
-
-let word = words.join(" ");
-console.log(word)

@@ -10,12 +10,10 @@
     body {
         margin: 0%;
     }
-    header {
-        height: 400px;
-    }
+   
     .container {
         display: flex;
-    height: 500px;
+    height: 100vh;
 
    
     }
@@ -25,19 +23,16 @@
         width: 100%;
     }
     .navbar-left {
-        width: 40%;
-        background: url("./iron\ man\ face.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+        width: 37%;
+    }
     
     .navbar-right {
-        width: 60%;
+        width: 63%;
     }
     .navbar ul {
         display: flex;
-        
+        flex-wrap: wrap;
+        margin-top: 30px;
         justify-content: space-around;
     }
     li {
@@ -45,14 +40,43 @@
     }
     a {
         text-decoration: none;
+        color: black;
+        font-size: 20px;
     }
     .logo {
-        background: url("I\ AM\ IRONMAN\ .jpg");
+        background: url("./images/roar.png") no-repeat center;
+        background-size: contain;
+        height: 100px;
+        
     }
     .intro {
-        
-
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: table;
+}
+.intro-insider {
+    display: table-cell;
+    vertical-align: middle;
+}
+.intro-insider-inside {
+    display: inline-block;
+}
+.shape {
+    display: flex;
+    width: 72%;
+    justify-content:flex-end;
+}
+    .shaper {
+    width: 0%;
+    height: 0%;
+    border-left: 58px solid skyblue;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
     }
+
+    
     .container-left {
         width: 50%;
         background-color: skyblue;
@@ -64,11 +88,18 @@
 <header>
   <div class="intro">
       <div class="intro-insider">
+        <div class="intro-insider-inside">
          <h2>Hey! i am</h2>
          <h1>Rafik Ali</h1>
          <h2>I'm a frontend developer</h2>
+         <div class="shape">
+             <div class="shaper"></div>
+
+         </div>
         </div>
     </div>
+    </div>
+
      <div class="container">
      <nav class="navbar">
          <div class="navbar-left">
@@ -80,7 +111,7 @@
 
         <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Resume</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
@@ -99,6 +130,16 @@
  </div>
 </header>
 <body>
+    <section>
+        <div class="about">
+            <div class="profile">
+
+            </div>
+            <div class="profile-info">
+                
+            </div>
+        </div>
+    </section>
     
 </body>
 </html>

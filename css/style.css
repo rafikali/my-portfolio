@@ -1,87 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-header {
-    height: 661px
+
+.container {
+    display: flex;
+    height: 660px;
 
 
 }
-/*edited*/
-/*edited*/
-
-
 .navbar {
     display: flex;
-    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+}
+.navbar-left {
+    width: 37%;
+}
 
+.navbar-right {
+    width: 63%;
 }
 .navbar ul {
-    margin-top: 30px;
-}
-
-.logo { 
-    height: 100px;
-}
-
-.logo img {
-    width: auto;
-    height: 100%;
-    padding-left: 83px;
-}
- 
-ul {
     display: flex;
-
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-around;
 }
 li {
     list-style-type: none;
 }
-
-.navbar ul li a {
+a {
     text-decoration: none;
     color: black;
-    font-size: 19px;
-    margin: 24px;
+    font-size: 20px;
 }
-.nav-left {
-    width: 50%;
-    background: #b9b8c985;
-}
-.nav-right {
-    width: 50%;
- 
-}
-.nav-right ul {
-    margin-left: -191px;
-}
-.head-left {
-    height: 561px;
-    width: 50%;
-    background: #b9b8c985;
-}
-
-.intro h2 {
-    margin: 0;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-
+.logo {
+    background: url("../images/roar.png") no-repeat center;
+    background-size: contain;
+    height: 100px;
+    
 }
 .intro {
-    transform:translate(339px, 155px);
+    position: absolute;
+    width: 100%;
+    height: 790px;
     text-align: center;
+    display: table;
 }
-.intro h1 {
-    font-size: 60px;
-    font-weight: 800;
-    letter-spacing: 4.2px;
-    margin: 12px 0;
+.intro-insider {
+    display: table-cell;
+    vertical-align: middle;
 }
+.intro-insider-inside h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin: 0;
+
+}
+.shape {
+    display: flex;
+    justify-content: center;
+    padding-left: 58px;
+
+}
+.fa-arrow-down {
+    position: relative;
+    top: 1.7rem;
+    left: .4rem;
+    animation: animation 1.7s ease infinite ;
+}
+@keyframes animation {
+    from {padding-top: 0px; }
+    to {padding-top: 40px; color: rgb(248, 248, 248)};
+}
+
+.shaper {
+    width: 0%;
+    height: 0%;
+    border-left: 58px solid #312c2c1c;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+}
+
 #container {
 	text-align: center;
+
 }
 
 #text {
@@ -96,7 +103,7 @@ li {
 	vertical-align: middle;
 	width: 3px;
 	height: 50px;
-	background-color: orange;
+	background-color: rgb(0, 0, 0);
 	animation: blink .75s step-end infinite;
 }
 
@@ -108,44 +115,14 @@ li {
 		background-color: black; 
 	}
 }
-.traingle {
-    display: flex;
-    margin-top: 212px;
-    height: 119px;
-    width: 108.9%;
-}
 
+.container-left {
+    width: 50%;
+    background-color: #312c2c1c;
 
-.traingle-left {
-    width: 92%;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 1.5rem;
-    padding-top: 26px;
-  
-    
 }
-
-.fa-long-arrow-down {
-    margin-right: -4px;
-    color: blue;
-    animation-name: arrow;
-    animation-duration: 1.4s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-    
-}
-@keyframes arrow {
-    from {padding-top: 0px;}
-    to {padding-top: 50px; };
-}
-
-.traingle-right {
-    width: 0; 
-  height: 0; 
-  border-top: 60px solid transparent;
-  border-bottom: 60px solid transparent;
-  border-left: 60px solid #b9b8c985;
+.container-right {
+    width: 50%
 }
 
 .about {
