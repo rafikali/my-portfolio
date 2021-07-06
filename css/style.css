@@ -128,6 +128,11 @@ a {
 .about {
     display: flex;
 }
+@media (max-width: 600px) {
+.about {
+	flex-direction: column;
+	}
+}
 .profile {
     width: 38%;
     margin: 0 0 0 162px;
