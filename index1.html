@@ -5,141 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
-<style>
-    body {
-        margin: 0%;
-    }
-   
-    .container {
-        display: flex;
-    height: 100vh;
 
-   
-    }
-    .navbar {
-        display: flex;
-        position: absolute;
-        width: 100%;
-    }
-    .navbar-left {
-        width: 37%;
-    }
-    
-    .navbar-right {
-        width: 63%;
-    }
-    .navbar ul {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 30px;
-        justify-content: space-around;
-    }
-    li {
-        list-style-type: none;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-    }
-    .logo {
-        background: url("./images/roar.png") no-repeat center;
-        background-size: contain;
-        height: 100px;
-        
-    }
-    .intro {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    display: table;
-}
-.intro-insider {
-    display: table-cell;
-    vertical-align: middle;
-}
-.intro-insider-inside {
-    display: inline-block;
-}
-.shape {
-    display: flex;
-    width: 72%;
-    justify-content:flex-end;
-}
-    .shaper {
-    width: 0%;
-    height: 0%;
-    border-left: 58px solid skyblue;
-    border-top: 60px solid transparent;
-    border-bottom: 60px solid transparent;
-    }
-
-    
-    .container-left {
-        width: 50%;
-        background-color: skyblue;
-    }
-    .container-right {
-        width: 50%
-    }
-</style>
-<header>
-  <div class="intro">
-      <div class="intro-insider">
-        <div class="intro-insider-inside">
-         <h2>Hey! i am</h2>
-         <h1>Rafik Ali</h1>
-         <h2>I'm a frontend developer</h2>
-         <div class="shape">
-             <div class="shaper"></div>
-
-         </div>
-        </div>
-    </div>
-    </div>
-
-     <div class="container">
-     <nav class="navbar">
-         <div class="navbar-left">
-             <div class="logo">
-               
-             </div>
-         </div>
-        <div class="navbar-right">
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">My Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-     </nav>
-  
-
-     <div class="container-left">
-
-     </div>
-     <div class="container-right">
-
-     </div>
- </div>
-</header>
 <body>
-    <section>
-        <div class="about">
-            <div class="profile">
-
-            </div>
-            <div class="profile-info">
-                
-            </div>
-        </div>
-    </section>
-    
+    <div id="navbar">
+        <a href="https://daily-dev-tips.com/" target="_blank">Blog</a>
+        <a href="https://twitter.com/DailyDevTips1" target="_blank">Twitter</a>
+        <a href="#" target="_blank">Facebook</a>
+      </div>
+      
+      <div class="content">
+        <h1>Please scroll down to see the menu</h1>
+      
+        A lot of content here...
+      </div>
 </body>
+<script>
+    var navbar = document.getElementById('navbar');
+window.onscroll = function() {
+  if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+    navbar.style.top = '0';
+  } else {
+    navbar.style.top = '-50px';
+  }
+};
+</script>
 </html>

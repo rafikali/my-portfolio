@@ -11,9 +11,12 @@ body {
 
 
 }
+.nav-container {
+    position: absolute;
+}
 .navbar {
     display: flex;
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 .navbar-left {
@@ -64,7 +67,7 @@ a {
 .shape {
     display: flex;
     justify-content: center;
-    padding-left: 58px;
+    padding-left: 44px;
 
 }
 .fa-arrow-down {
